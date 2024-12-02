@@ -12,6 +12,11 @@ pip install -r infrastructure/requirements.txt
 python -m infrastructure.utils.downloader --year=2024 --day=1
 ```
 
+```shell
+python -m solutions.year_2023.day_2.part_two
+```
+
+
 ## Stats
 
 | Year | Day | Part |                   State                    |        Time Complexity         | Space Complexity |
