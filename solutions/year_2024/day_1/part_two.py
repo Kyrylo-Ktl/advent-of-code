@@ -10,6 +10,13 @@ class Year2024Day1Part2Solution(Year2024Day1Part1Solution):
 
     @override
     def solve(self, left: list[int], right: list[int]) -> int:
+        """
+        Time:  O(n+m)
+        Space: O(1)
+
+        Where n - size of left list,
+              m - size of right list
+        """
         distance = 0
 
         # For getting count in O(1)

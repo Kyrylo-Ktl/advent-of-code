@@ -24,22 +24,29 @@ parser.add_argument('--year', required=True, type=int, choices=range(FIRST_YEAR,
 parser.add_argument('--day', required=True, type=int, choices=range(FIRST_DAY, LAST_DAY + 1))
 
 
-def prepare_input(year: int, day: int):
-    client = AdventOfCodeClient(session=SESSION)
+class InputsDownloader:
 
-    input_path = get_input_path(year=year, day=day)
-    input_name = get_input_filename(year=year, day=day)
-    input_text = client.get_input(year=year, day=day)
+    def __init__(self, client: AdventOfCodeClient):
+        self.client = client
 
-    # For creating nested folders structure
-    os.makedirs(input_path, exist_ok=True)
+    def download(self, year: int, day: int):
+        input_path = get_input_path(year=year, day=day)
+        input_name = get_input_filename(year=year, day=day)
+        input_text = self.client.get_input(year=year, day=day)
 
-    with open(input_path / input_name, 'wt') as file:
-        file.write(input_text)
+        # For creating nested folders structure
+        os.makedirs(input_path, exist_ok=True)
 
-    logger.info(f'Saved year {year}, day {day} task input to {input_path / input_name}')
+        with open(input_path / input_name, 'wt') as file:
+            file.write(input_text)
+
+        logger.info(f'Saved year {year}, day {day} task input to {input_path / input_name}')
 
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    prepare_input(year=args.year, day=args.day)
+
+    client = AdventOfCodeClient(session=SESSION)
+    downloader = InputsDownloader(client=client)
+
+    downloader.download(year=args.year, day=args.day)
