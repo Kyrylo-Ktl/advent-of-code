@@ -1,7 +1,7 @@
 from itertools import pairwise
 from typing import final, override
 
-from infrastructure.solution import Solution
+from infrastructure.solutions.base import Solution
 
 
 class Year2024Day2Part1Solution(Solution):

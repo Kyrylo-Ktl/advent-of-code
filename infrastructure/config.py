@@ -6,7 +6,6 @@ BASE_PATH = Path(__file__).parent.parent.absolute()
 
 SESSION = os.environ['SESSION']
 
-INPUT_URL_TEMPLATE = 'https://adventofcode.com/{year}/day/{day}/input'
 
 # From the first year of the calendar to the current one
 FIRST_YEAR = 2015
