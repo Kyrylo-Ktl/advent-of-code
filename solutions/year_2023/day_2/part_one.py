@@ -48,6 +48,13 @@ class Year2023Day2Part1Solution(Solution):
 
     @override
     def solve(self, games: dict[GAME_ID, list[CUBES_COUNT]]) -> int:
+        """
+        Time:  O(n*m)
+        Space: O(1)
+
+        Where n - total number of games,
+              m - maximum game size
+        """
         ids_sum = 0
 
         for game_id, game in games.items():
