@@ -16,10 +16,11 @@ class Year2024Day3Part1Solution(Solution):
     def solve(self, memory: str) -> int:
         """
         Time:  O(n*m)
-        Space: O(1)
+        Space: O(k)
 
         Where n - length of the memory string,
-              m - maximum number of digits in mul expression
+              m - maximum number of digits in mul expression,
+              k - number of mul expressions
         """
         total_sum = 0
 

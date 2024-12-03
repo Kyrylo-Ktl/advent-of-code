@@ -25,3 +25,7 @@ python -m solutions.year_2023.day_2.part_two
 | 2024 |  1  | Two  | [⭐](solutions/year_2024/day_1/part_two.py) |            $O(n+m)$            |      $O(1)$      |
 | 2024 |  2  | One  | [⭐](solutions/year_2024/day_2/part_one.py) |            $O(n*m)$            |      $O(1)$      |
 | 2024 |  2  | Two  | [⭐](solutions/year_2024/day_2/part_two.py) |           $O(n*m^2)$           |      $O(m)$      |
+| 2024 |  3  | One  | [⭐](solutions/year_2024/day_3/part_one.py) |            $O(n*m)$            |      $O(k)$      |
+| 2024 |  3  | Two  | [⭐](solutions/year_2024/day_3/part_two.py) |            $O(n*m)$            |      $O(1)$      |
+| 2024 |  4  | One  | [-](solutions/year_2024/day_4/part_one.py) |              $-$               |       $-$        |
+| 2024 |  4  | Two  | [-](solutions/year_2024/day_4/part_two.py) |              $-$               |       $-$        |
