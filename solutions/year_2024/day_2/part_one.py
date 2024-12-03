@@ -5,11 +5,10 @@ from infrastructure.solutions.base import Solution
 
 
 class Year2024Day2Part1Solution(Solution):
-    YEAR = 2024
-    DAY = 2
 
+    @classmethod
     @override
-    def parse_input(self, text_input: str) -> dict[str, list[list[int]]]:
+    def parse_input(cls, text_input: str) -> dict[str, list[list[int]]]:
         reports = []
 
         for row in text_input.split('\n'):
@@ -21,8 +20,9 @@ class Year2024Day2Part1Solution(Solution):
 
         return {'reports': reports}
 
+    @classmethod
     @override
-    def solve(self, reports: list[list[int]]) -> int:
+    def solve(cls, reports: list[list[int]]) -> int:
         """
         Time:  O(n*m)
         Space: O(1)
@@ -33,13 +33,14 @@ class Year2024Day2Part1Solution(Solution):
         safe_count = 0
 
         for report in reports:
-            if self.is_safe(report):
+            if cls.is_safe(report):
                 safe_count += 1
 
         return safe_count
 
+    @classmethod
     @final
-    def is_safe(self, report: list[int]) -> bool:
+    def is_safe(cls, report: list[int]) -> bool:
         is_decreasing = True
         is_increasing = True
 
@@ -58,5 +59,4 @@ class Year2024Day2Part1Solution(Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2024Day2Part1Solution().main()
-    print(answer)
+    print(Year2024Day2Part1Solution.main())

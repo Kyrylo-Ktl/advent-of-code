@@ -15,11 +15,38 @@ class CubeColor(StrEnum):
 
 
 class Year2023Day2Part2Solution(Year2023Day2Part1Solution):
-    YEAR = 2023
-    DAY = 2
+    RED_CUBES = 12
+    GREEN_CUBES = 13
+    BLUE_CUBES = 14
 
+    @classmethod
     @override
-    def solve(self, games: dict[GAME_ID, list[CUBES_COUNT]]) -> int:
+    def parse_input(cls, text_input: str) -> dict[str, dict[GAME_ID, list[CUBES_COUNT]]]:
+        games = {}
+
+        for line in text_input.split('\n'):
+            if not line:
+                continue
+
+            # Game <ID>: <game>
+            game_id, game = line.split(': ')
+            game_id = int(game_id.removeprefix('Game '))
+
+            games[game_id] = []
+
+            # <subset1>; <subset2>; ...
+            for subset in game.split('; '):
+                # <cubes1>, <cubes2>, ...
+                for cubes in subset.split(', '):
+                    # <count> <color>
+                    count, color = cubes.split()
+                    games[game_id].append((color, int(count)))
+
+        return {'games': games}
+
+    @classmethod
+    @override
+    def solve(cls, games: dict[GAME_ID, list[CUBES_COUNT]]) -> int:
         """
         Time:  O(n*m)
         Space: O(1)
@@ -30,7 +57,7 @@ class Year2023Day2Part2Solution(Year2023Day2Part1Solution):
         total_power = 0
 
         for game_id, game in games.items():
-            total_power += self.get_cubes_power(game)
+            total_power += cls.get_cubes_power(game)
 
         return total_power
 
@@ -54,5 +81,4 @@ class Year2023Day2Part2Solution(Year2023Day2Part1Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2023Day2Part2Solution().main()
-    print(answer)
+    print(Year2023Day2Part2Solution.main())

@@ -4,11 +4,10 @@ from infrastructure.solutions.base import Solution
 
 
 class Year2017Day1Part1Solution(Solution):
-    YEAR = 2017
-    DAY = 1
 
+    @classmethod
     @override
-    def parse_input(self, text_input: str) -> dict[str, list[int]]:
+    def parse_input(cls, text_input: str) -> dict[str, list[int]]:
         digits = []
 
         for char in text_input:
@@ -17,8 +16,9 @@ class Year2017Day1Part1Solution(Solution):
 
         return {'digits': digits}
 
+    @classmethod
     @override
-    def solve(self, digits: list[int]) -> int:
+    def solve(cls, digits: list[int]) -> int:
         """
         Time:  O(n)
         Space: O(1)
@@ -36,5 +36,4 @@ class Year2017Day1Part1Solution(Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2017Day1Part1Solution().main()
-    print(answer)
+    print(Year2017Day1Part1Solution.main())

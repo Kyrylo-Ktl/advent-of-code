@@ -4,11 +4,10 @@ from infrastructure.solutions.base import Solution
 
 
 class Year2024Day1Part1Solution(Solution):
-    YEAR = 2024
-    DAY = 1
 
+    @classmethod
     @override
-    def parse_input(self, text_input: str) -> dict[str, list[int]]:
+    def parse_input(cls, text_input: str) -> dict[str, list[int]]:
         left = []
         right = []
 
@@ -23,8 +22,9 @@ class Year2024Day1Part1Solution(Solution):
 
         return {'left': left, 'right': right}
 
+    @classmethod
     @override
-    def solve(self, left: list[int], right: list[int]) -> int:
+    def solve(cls, left: list[int], right: list[int]) -> int:
         """
         Time:  O(n*log(n)+m*log(m))
         Space: O(n+m)
@@ -41,5 +41,4 @@ class Year2024Day1Part1Solution(Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2024Day1Part1Solution().main()
-    print(answer)
+    print(Year2024Day1Part1Solution.main())

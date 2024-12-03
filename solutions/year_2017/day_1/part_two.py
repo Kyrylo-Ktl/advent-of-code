@@ -1,11 +1,20 @@
 from typing import override
 
-from solutions.year_2017.day_1.part_one import Year2017Day1Part1Solution
+from infrastructure.solutions.base import Solution
 
 
-class Year2017Day1Part2Solution(Year2017Day1Part1Solution):
-    YEAR = 2017
-    DAY = 1
+class Year2017Day1Part2Solution(Solution):
+
+    @classmethod
+    @override
+    def parse_input(cls, text_input: str) -> dict[str, list[int]]:
+        digits = []
+
+        for char in text_input:
+            if char.isdigit():
+                digits.append(int(char))
+
+        return {'digits': digits}
 
     @override
     def solve(self, digits: list[int]) -> int:
@@ -26,5 +35,4 @@ class Year2017Day1Part2Solution(Year2017Day1Part1Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2017Day1Part2Solution().main()
-    print(answer)
+    print(Year2017Day1Part2Solution.main())

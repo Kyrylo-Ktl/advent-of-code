@@ -2,7 +2,7 @@ import re
 from enum import StrEnum
 from typing import override
 
-from solutions.year_2024.day_3.part_one import Year2024Day3Part1Solution
+from infrastructure.solutions.base import Solution
 
 
 class Operation(StrEnum):
@@ -10,12 +10,16 @@ class Operation(StrEnum):
     DO_NOT = 'don\'t()'
 
 
-class Year2024Day3Part2Solution(Year2024Day3Part1Solution):
-    YEAR = 2024
-    DAY = 3
+class Year2024Day3Part2Solution(Solution):
 
+    @classmethod
     @override
-    def solve(self, memory: str) -> int:
+    def parse_input(cls, text_input: str) -> dict[str, str]:
+        return {'memory': text_input}
+
+    @classmethod
+    @override
+    def solve(cls, memory: str) -> int:
         """
         Time:  O(n*m)
         Space: O(1)
@@ -43,5 +47,4 @@ class Year2024Day3Part2Solution(Year2024Day3Part1Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2024Day3Part2Solution().main()
-    print(answer)
+    print(Year2024Day3Part2Solution.main())

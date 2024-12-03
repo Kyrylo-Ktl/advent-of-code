@@ -1,14 +1,27 @@
 from typing import override
 
-from solutions.year_2017.day_2.part_one import Year2017Day2Part1Solution
+from infrastructure.solutions.base import Solution
 
 
-class Year2017Day2Part2Solution(Year2017Day2Part1Solution):
-    YEAR = 2017
-    DAY = 2
+class Year2017Day2Part2Solution(Solution):
 
+    @classmethod
     @override
-    def solve(self, spreadsheet: list[list[int]]) -> int:
+    def parse_input(cls, text_input: str) -> dict[str, list[list[int]]]:
+        spreadsheet = []
+
+        for row in text_input.split('\n'):
+            if not row:
+                continue
+
+            row = [int(num) for num in row.split()]
+            spreadsheet.append(row)
+
+        return {'spreadsheet': spreadsheet}
+
+    @classmethod
+    @override
+    def solve(cls, spreadsheet: list[list[int]]) -> int:
         """
         Time:  O(n*m^2)
         Space: O(1)
@@ -28,5 +41,4 @@ class Year2017Day2Part2Solution(Year2017Day2Part1Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2017Day2Part2Solution().main()
-    print(answer)
+    print(Year2017Day2Part2Solution.main())

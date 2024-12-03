@@ -5,15 +5,15 @@ from infrastructure.solutions.base import Solution
 
 
 class Year2024Day3Part1Solution(Solution):
-    YEAR = 2024
-    DAY = 3
 
+    @classmethod
     @override
-    def parse_input(self, text_input: str) -> dict[str, str]:
+    def parse_input(cls, text_input: str) -> dict[str, str]:
         return {'memory': text_input}
 
+    @classmethod
     @override
-    def solve(self, memory: str) -> int:
+    def solve(cls, memory: str) -> int:
         """
         Time:  O(n*m)
         Space: O(k)
@@ -31,5 +31,4 @@ class Year2024Day3Part1Solution(Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2024Day3Part1Solution().main()
-    print(answer)
+    print(Year2024Day3Part1Solution.main())

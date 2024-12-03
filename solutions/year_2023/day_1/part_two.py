@@ -1,6 +1,6 @@
 from typing import override
 
-from solutions.year_2023.day_1.part_one import Year2023Day1Part1Solution
+from infrastructure.solutions.base import Solution
 
 WORD_TO_NUMBER_MAP = {
     'one': '1',
@@ -15,10 +15,23 @@ WORD_TO_NUMBER_MAP = {
 }
 
 
-class Year2023Day1Part2Solution(Year2023Day1Part1Solution):
+class Year2023Day1Part2Solution(Solution):
 
+    @classmethod
     @override
-    def solve(self, lines: list[str]) -> int:
+    def parse_input(cls, text_input: str) -> dict[str, list[str]]:
+        lines = []
+
+        for line in text_input.split('\n'):
+            if not line:
+                continue
+            lines.append(line)
+
+        return {'lines': lines}
+
+    @classmethod
+    @override
+    def solve(cls, lines: list[str]) -> int:
         """
         Time:  O(n*m^2)
         Space: O(m)
@@ -29,7 +42,7 @@ class Year2023Day1Part2Solution(Year2023Day1Part1Solution):
         total_calibration = 0
 
         for line in lines:
-            total_calibration += self.get_calibration(line)
+            total_calibration += cls.get_calibration(line)
 
         return total_calibration
 
@@ -72,5 +85,4 @@ class Year2023Day1Part2Solution(Year2023Day1Part1Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2023Day1Part2Solution().main()
-    print(answer)
+    print(Year2023Day1Part2Solution.main())

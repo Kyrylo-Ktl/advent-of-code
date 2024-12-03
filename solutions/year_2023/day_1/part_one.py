@@ -4,11 +4,10 @@ from infrastructure.solutions.base import Solution
 
 
 class Year2023Day1Part1Solution(Solution):
-    YEAR = 2023
-    DAY = 1
 
+    @classmethod
     @override
-    def parse_input(self, text_input: str) -> dict[str, list[str]]:
+    def parse_input(cls, text_input: str) -> dict[str, list[str]]:
         lines = []
 
         for line in text_input.split('\n'):
@@ -18,8 +17,9 @@ class Year2023Day1Part1Solution(Solution):
 
         return {'lines': lines}
 
+    @classmethod
     @override
-    def solve(self, lines: list[str]) -> int:
+    def solve(cls, lines: list[str]) -> int:
         """
         Time:  O(n*m)
         Space: O(1)
@@ -30,7 +30,7 @@ class Year2023Day1Part1Solution(Solution):
         total_calibration = 0
 
         for line in lines:
-            total_calibration += self.get_calibration(line)
+            total_calibration += cls.get_calibration(line)
 
         return total_calibration
 
@@ -52,5 +52,4 @@ class Year2023Day1Part1Solution(Solution):
 
 
 if __name__ == '__main__':
-    answer = Year2023Day1Part1Solution().main()
-    print(answer)
+    print(Year2023Day1Part1Solution.main())
