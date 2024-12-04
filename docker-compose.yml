@@ -32,4 +32,5 @@ services:
     volumes:
       - ./inputs:/app/inputs
     depends_on:
+      - advent-of-code-runner
       - advent-of-code-downloader

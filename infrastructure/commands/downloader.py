@@ -34,7 +34,8 @@ class InputsDownloader:
         os.makedirs(input_path, exist_ok=True)
 
         with open(input_path / input_name, 'wt') as file:
-            file.write(input_text)
+            # Removes blank line at the end of input
+            file.write(input_text.rstrip('\n'))
 
         logger.info(f'Saved year {year}, day {day} task input to {input_path / input_name}')
 

@@ -75,6 +75,8 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
 |:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2022/day/1) | [Input](https://adventofcode.com/2022/day/1/input) | [⭐](solutions/year_2022/day_1/part_one.py) |    $O(n*m)$     |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2022/day/1) | [Input](https://adventofcode.com/2022/day/1/input) | [⭐](solutions/year_2022/day_1/part_two.py) |    $O(n*m)$     |      $O(1)$      |       |
 
 ### Year 2021
 
