@@ -14,8 +14,8 @@
 |  2  | Two  | [Description](https://adventofcode.com/2024/day/2)  | [Input](https://adventofcode.com/2024/day/2/input)  | [⭐](solutions/year_2024/day_2/part_two.py)  |           $O(n*m^2)$           |      $O(m)$      |       |
 |  3  | One  | [Description](https://adventofcode.com/2024/day/3)  | [Input](https://adventofcode.com/2024/day/3/input)  | [⭐](solutions/year_2024/day_3/part_one.py)  |            $O(n*m)$            |      $O(k)$      |       |
 |  3  | Two  | [Description](https://adventofcode.com/2024/day/3)  | [Input](https://adventofcode.com/2024/day/3/input)  | [⭐](solutions/year_2024/day_3/part_two.py)  |            $O(n*m)$            |      $O(1)$      |       |
-|  4  | One  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [-](solutions/year_2024/day_4/part_one.py)  |              $-$               |       $-$        |       |
-|  4  | Two  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [-](solutions/year_2024/day_4/part_two.py)  |              $-$               |       $-$        |       |
+|  4  | One  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [⭐](solutions/year_2024/day_4/part_one.py)  |       $O((n+m)*(n+m)*k)$       |     $O(n*m)$     |       |
+|  4  | Two  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [⭐](solutions/year_2024/day_4/part_two.py)  |          $(O(n*m*k))$          |      $O(k)$      |       |
 |  5  | One  | [Description](https://adventofcode.com/2024/day/5)  | [Input](https://adventofcode.com/2024/day/5/input)  | [-](solutions/year_2024/day_5/part_one.py)  |              $-$               |       $-$        |       |
 |  5  | Two  | [Description](https://adventofcode.com/2024/day/5)  | [Input](https://adventofcode.com/2024/day/5/input)  | [-](solutions/year_2024/day_5/part_two.py)  |              $-$               |       $-$        |       |
 |  6  | One  | [Description](https://adventofcode.com/2024/day/6)  | [Input](https://adventofcode.com/2024/day/6/input)  | [-](solutions/year_2024/day_6/part_one.py)  |              $-$               |       $-$        |       |
@@ -72,6 +72,8 @@
 
 ### Setup
 
+Environment:
+
 ```dotenv
 SESSION=<your-session-cookie>
 
@@ -80,26 +82,49 @@ DAY=1
 PART=one
 ```
 
-### Local Run
+Dependencies:
 
 ```shell
 pip install -r infrastructure/requirements.txt
 ```
 
-```shell
-python -m infrastructure.utils.downloader --year=2024 --day=1
-```
+
+### Local Run
+
+Downloader:
 
 ```shell
-python -m infrastructure.utils.runner --year=2024 --day=1 --part=1
+python -m infrastructure.commands.downloader --year=2024 --day=1
+```
+
+Runner:
+
+```shell
+python -m infrastructure.commands.runner --year=2024 --day=1 --part=1
+```
+
+Validator:
+
+```shell
+python -m infrastructure.commands.validator
 ```
 
 ### Run in Docker
 
-```shell
-YEAR=2018 DAY=1 docker compose up advent-of-code-downloader --build
-```
+Downloader:
 
 ```shell
 docker compose up advent-of-code-downloader --build
+```
+
+Runner:
+
+```shell
+docker compose up advent-of-code-runner --build
+```
+
+Validator:
+
+```shell
+docker compose up advent-of-code-validator --build
 ```
