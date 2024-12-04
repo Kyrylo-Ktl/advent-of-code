@@ -2,10 +2,8 @@ import logging
 
 import requests
 
+from infrastructure.aoc.config import get_input_url
 from infrastructure.models import InputId
-
-BASE_URL = 'https://adventofcode.com'
-INPUT_URL_TEMPLATE = BASE_URL + '/{year}/day/{day}/input'
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +17,7 @@ class AdventOfCodeClient:
         session = requests.Session()
         session.headers = {'cookie': f'session={self.session}'}
 
-        input_url = INPUT_URL_TEMPLATE.format(year=input_id.year, day=input_id.day)
+        input_url = get_input_url(input_id=input_id)
         logger.info(f'Downloading input from {input_url}')
 
         with session.get(input_url) as response:

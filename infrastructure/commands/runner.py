@@ -38,19 +38,21 @@ class SolutionsRunner:
 
         return solutions_map
 
-    def run(self, year: int, day: int, part: int):
-        solution_id = SolutionId(year=year, day=day, part=part)
-
+    def run(self, solution_id: SolutionId):
         if solution_id not in self.solutions:
-            raise ValueError('Not solved yet')
+            raise ValueError(f'Not solved yet - {solution_id}')
 
         solution = self.solutions[solution_id]
 
-        logger.info(f'Answer for year {year}, day {day}, part {part} task:  {solution.main()}')
+        logger.info(f'Answer for {solution_id} task: {solution.main()}')
 
 
 if __name__ == '__main__':
     args = parser.parse_args()
+    solution_id = SolutionId(year=args.year, day=args.day, part=args.part)
+
+    for item in Solution.__subclasses__():
+        print(item)
 
     runner = SolutionsRunner(Solution.__subclasses__())
-    runner.run(year=args.year, day=args.day, part=args.part)
+    runner.run(solution_id)

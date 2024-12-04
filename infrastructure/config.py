@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from infrastructure.models import InputId
+from infrastructure.models import InputId, SolutionId
 
 BASE_PATH = Path(__file__).parent.parent.absolute()
 
@@ -12,7 +12,8 @@ INPUT_DAY_DIR_TEMPLATE = 'Day {day}'
 INPUT_FILE_NAME = 'input.txt'
 
 #
-SOLUTION_DIR = BASE_PATH / 'solutions'
+SOLUTION_DIR_NAME = 'solutions'
+SOLUTION_DIR = BASE_PATH / SOLUTION_DIR_NAME
 
 SOLUTION_YEAR_DIR_TEMPLATE = 'year_{year}'
 SOLUTION_DAY_DIR_TEMPLATE = 'day_{day}'
@@ -44,4 +45,29 @@ def get_input_path(input_id: InputId) -> Path:
 
 def get_input_filename(input_id: InputId) -> str:
     filename = INPUT_FILE_NAME.format(year=input_id.year, day=input_id.day)
+    return filename
+
+
+def get_solution_path(solution_id: SolutionId) -> Path:
+    year = SOLUTION_YEAR_DIR_TEMPLATE.format(year=solution_id.year)
+    day = SOLUTION_DAY_DIR_TEMPLATE.format(day=solution_id.day)
+
+    path = SOLUTION_DIR / year / day
+
+    return path
+
+
+def get_solution_module(solution_id: SolutionId) -> str:
+    year = SOLUTION_YEAR_DIR_TEMPLATE.format(year=solution_id.year)
+    day = SOLUTION_DAY_DIR_TEMPLATE.format(day=solution_id.day)
+    file = get_input_filename(solution_id)
+
+    module = f'{SOLUTION_DIR_NAME}.{year}.{day}.{file}'
+
+    return module
+
+
+def get_solution_filename(solution_id: SolutionId) -> str:
+    part = 'one' if solution_id.part == 1 else 'two'
+    filename = SOLUTION_FILE_NAME.format(year=solution_id.year, day=solution_id.day, part=part)
     return filename

@@ -10,6 +10,7 @@ class InputId(BaseModel):
     class Config:
         extra = 'ignore'
         frozen = True
+        use_enum_values = True
 
 
 class SolutionId(BaseModel):
@@ -24,3 +25,4 @@ class SolutionId(BaseModel):
     class Config:
         extra = 'ignore'
         frozen = True
+        use_enum_values = True

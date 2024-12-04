@@ -1,7 +1,7 @@
 from enum import StrEnum, unique
 from typing import override
 
-from solutions.year_2023.day_2.part_one import Year2023Day2Part1Solution
+from infrastructure.solutions.base import Solution
 
 GAME_ID = int
 CUBES_COUNT = tuple[str, int]
@@ -14,7 +14,7 @@ class CubeColor(StrEnum):
     BLUE = 'blue'
 
 
-class Year2023Day2Part2Solution(Year2023Day2Part1Solution):
+class Year2023Day2Part2Solution(Solution):
     RED_CUBES = 12
     GREEN_CUBES = 13
     BLUE_CUBES = 14

@@ -16,8 +16,9 @@ class Year2017Day1Part2Solution(Solution):
 
         return {'digits': digits}
 
+    @classmethod
     @override
-    def solve(self, digits: list[int]) -> int:
+    def solve(cls, digits: list[int]) -> int:
         """
         Time:  O(n)
         Space: O(1)
