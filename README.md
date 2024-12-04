@@ -2,7 +2,25 @@
 
 ...
 
-## Statistics
+## Table of Contents
+
+- [Solutions](#solutions)
+  - Solutions [table](#year-2024) for year 2024 with 4 of 25 days solved;
+  - Solutions [table](#year-2023) for year 2023 with 2 of 25 days solved;
+  - Solutions [table](#year-2022) for year 2022 with 0 of 25 days solved;
+  - Solutions [table](#year-2021) for year 2021 with 0 of 25 days solved;
+  - Solutions [table](#year-2020) for year 2020 with 0 of 25 days solved;
+  - Solutions [table](#year-2019) for year 2019 with 0 of 25 days solved;
+  - Solutions [table](#year-2018) for year 2018 with 0 of 25 days solved;
+  - Solutions [table](#year-2017) for year 2017 with 0 of 25 days solved;
+  - Solutions [table](#year-2016) for year 2016 with 0 of 25 days solved;
+- [Usage](#usage)
+  - Project [setup](#setup) for personal usage;
+  - Local [run](#local-run) of project tools;
+  - Docker [run](#run-in-docker) of project tools;
+
+
+## Solutions
 
 ### Year 2024
 
@@ -67,6 +85,43 @@
 |  1  | Two  | [Description](https://adventofcode.com/2023/day/1) | [Input](https://adventofcode.com/2023/day/1/input) | [⭐](solutions/year_2023/day_1/part_two.py) |   $O(n*m^2)$    |      $O(m)$      |       |
 |  2  | One  | [Description](https://adventofcode.com/2023/day/2) | [Input](https://adventofcode.com/2023/day/2/input) | [⭐](solutions/year_2023/day_2/part_one.py) |    $O(n*m)$     |      $O(1)$      |       |
 |  2  | Two  | [Description](https://adventofcode.com/2023/day/2) | [Input](https://adventofcode.com/2023/day/2/input) | [⭐](solutions/year_2023/day_2/part_two.py) |    $O(n*m)$     |      $O(1)$      |       |
+
+### Year 2022
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2021
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2020
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2019
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2018
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2017
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+### Year 2016
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+
+
 
 ## Usage
 
