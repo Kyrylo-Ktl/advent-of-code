@@ -1,4 +1,4 @@
-# Advent of Code Python Solutions
+# Advent of Code Solutions
 
 
 [![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-ffff66?logo=adventofcode&logoColor=000)](<https://adventofcode.com/> "Advent of Code homepage")
@@ -112,14 +112,16 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 
 ### Setup
 
-Environment:
+Clone project:
 
-```dotenv
-SESSION=<your-session-cookie>
+```shell
+git clone https://github.com/Kyrylo-Ktl/advent-of-code
+```
 
-YEAR=2024
-DAY=1
-PART=one
+Move to project directory:
+
+```shell
+cd advent-of-code
 ```
 
 Dependencies:
@@ -128,6 +130,18 @@ Dependencies:
 pip install -r infrastructure/requirements.txt
 ```
 
+Environment:
+
+```dotenv
+SESSION=<your-session-cookie>
+
+GID=0
+UID=0
+
+YEAR=2024
+DAY=1
+PART=one
+```
 
 ### Local Run
 
@@ -168,3 +182,16 @@ Validator:
 ```shell
 docker compose up advent-of-code-validator --build
 ```
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+
+## License
+
+This project is licensed under the MIT License - see the [license](LICENSE) file for details.
+
+
+## Happy adventure! ⭐
