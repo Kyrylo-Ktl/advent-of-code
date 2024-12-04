@@ -1,5 +1,32 @@
 # Advent of Code Python Solutions
 
+
+[![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-ffff66?logo=adventofcode&logoColor=000)](<https://adventofcode.com/> "Advent of Code homepage")
+[![Made with Python](https://img.shields.io/badge/Python->=3.11-blue?logo=python&logoColor=yellow)](<https://python.org> "Python homepage")
+![Last commit](https://img.shields.io/github/last-commit/Kyrylo-Ktl/advent-of-code "Last commit")
+
+---
+
+[![AoC 2015](https://img.shields.io/badge/2015-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2015)
+[![AoC 2016](https://img.shields.io/badge/2016-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2016)
+[![AoC 2017](https://img.shields.io/badge/2017-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2017)
+[![AoC 2018](https://img.shields.io/badge/2018-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
+[![AoC 2019](https://img.shields.io/badge/2019-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019)  
+[![AoC 2020](https://img.shields.io/badge/2020-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
+[![AoC 2021](https://img.shields.io/badge/2021-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
+[![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
+[![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
+[![AoC 2024](https://img.shields.io/badge/2024-⭐%208-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
+
+---
+
+This project contains all my solutions for [Advent of Code](https://adventofcode.com/) challenges.
+
+> [!WARNING]
+> Note that ***this project can automatically download tasks and inputs and submit your solutions*** to the Advent of
+> Code server. Please use it moderately.
+
+
 ...
 
 ## Table of Contents

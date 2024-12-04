@@ -6,7 +6,9 @@ from infrastructure.models import InputId, SolutionId
 BASE_PATH = Path(__file__).parent.parent.absolute()
 
 # ...
-INPUT_DIR = BASE_PATH / 'inputs'
+INPUT_DIR_NAME = 'inputs'
+INPUT_DIR = BASE_PATH / INPUT_DIR_NAME
+
 INPUT_YEAR_DIR_TEMPLATE = 'Year {year}'
 INPUT_DAY_DIR_TEMPLATE = 'Day {day}'
 INPUT_FILE_NAME = 'input.txt'
@@ -17,7 +19,6 @@ SOLUTION_DIR = BASE_PATH / SOLUTION_DIR_NAME
 
 SOLUTION_YEAR_DIR_TEMPLATE = 'year_{year}'
 SOLUTION_DAY_DIR_TEMPLATE = 'day_{day}'
-
 SOLUTION_FILE_NAME = 'part_{part}.py'
 
 # ...
@@ -55,16 +56,6 @@ def get_solution_path(solution_id: SolutionId) -> Path:
     path = SOLUTION_DIR / year / day
 
     return path
-
-
-def get_solution_module(solution_id: SolutionId) -> str:
-    year = SOLUTION_YEAR_DIR_TEMPLATE.format(year=solution_id.year)
-    day = SOLUTION_DAY_DIR_TEMPLATE.format(day=solution_id.day)
-    file = get_input_filename(solution_id)
-
-    module = f'{SOLUTION_DIR_NAME}.{year}.{day}.{file}'
-
-    return module
 
 
 def get_solution_filename(solution_id: SolutionId) -> str:
