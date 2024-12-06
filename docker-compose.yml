@@ -1,0 +1,35 @@
+services:
+  advent-of-code-downloader:
+    container_name: advent-of-code
+    user: "${UID}:${GID}"
+    build: .
+    entrypoint: [ 'python', '-m', 'infrastructure.commands.downloader', '--year=$YEAR', '--day=$DAY' ]
+    env_file:
+      - .env
+    volumes:
+      - ./inputs:/app/inputs
+
+  advent-of-code-runner:
+    container_name: advent-of-code-runner
+    user: "${UID}:${GID}"
+    build: .
+    entrypoint: [ 'python', '-m', 'infrastructure.commands.runner', '--year=$YEAR', '--day=$DAY', '--part=$PART' ]
+    env_file:
+      - .env
+    volumes:
+      - ./inputs:/app/inputs
+    depends_on:
+      - advent-of-code-downloader
+
+  advent-of-code-validator:
+    container_name: advent-of-code-validator
+    user: "${UID}:${GID}"
+    build: .
+    entrypoint: [ 'python', '-m', 'infrastructure.commands.validator' ]
+    env_file:
+      - .env
+    volumes:
+      - ./inputs:/app/inputs
+    depends_on:
+      - advent-of-code-runner
+      - advent-of-code-downloader
