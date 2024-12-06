@@ -34,13 +34,14 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 - [Solutions](#solutions)
   - Solutions for year [2024](#year-2024) with **4**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
-  - Solutions for year [2022](#year-2022) with **0**/**25** days solved;
-  - Solutions for year [2021](#year-2021) with **0**/**25** days solved;
-  - Solutions for year [2020](#year-2020) with **0**/**25** days solved;
-  - Solutions for year [2019](#year-2019) with **0**/**25** days solved;
-  - Solutions for year [2018](#year-2018) with **0**/**25** days solved;
-  - Solutions for year [2017](#year-2017) with **0**/**25** days solved;
-  - Solutions for year [2016](#year-2016) with **0**/**25** days solved;
+  - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
+  - Solutions for year [2021](#year-2021) with **1**/**25** days solved;
+  - Solutions for year [2020](#year-2020) with **1**/**25** days solved;
+  - Solutions for year [2019](#year-2019) with **1**/**25** days solved;
+  - Solutions for year [2018](#year-2018) with **1**/**25** days solved;
+  - Solutions for year [2017](#year-2017) with **1**/**25** days solved;
+  - Solutions for year [2016](#year-2016) with **1**/**25** days solved;
+  - Solutions for year [2015](#year-2015) with **1**/**25** days solved;
 - [Usage](#usage)
   - Project [setup](#setup) for personal usage;
   - Local [run](#local-run) of project tools;
@@ -51,16 +52,20 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 
 ### Year 2024
 
-| Day | Part |                  Task description                   |                     Task input                      |                  Solution                   |        Time Complexity         | Space Complexity | Notes |
-|:---:|:----:|:---------------------------------------------------:|:---------------------------------------------------:|:-------------------------------------------:|:------------------------------:|:----------------:|-------|
-|  1  | One  | [Description](https://adventofcode.com/2024/day/1)  | [Input](https://adventofcode.com/2024/day/1/input)  | [⭐](solutions/year_2024/day_1/part_one.py)  | $O(n*\log_2{n} + m*\log_2{m})$ |     $O(n+m)$     |       |
-|  1  | Two  | [Description](https://adventofcode.com/2024/day/1)  | [Input](https://adventofcode.com/2024/day/1/input)  | [⭐](solutions/year_2024/day_1/part_two.py)  |            $O(n+m)$            |      $O(1)$      |       |
-|  2  | One  | [Description](https://adventofcode.com/2024/day/2)  | [Input](https://adventofcode.com/2024/day/2/input)  | [⭐](solutions/year_2024/day_2/part_one.py)  |            $O(n*m)$            |      $O(1)$      |       |
-|  2  | Two  | [Description](https://adventofcode.com/2024/day/2)  | [Input](https://adventofcode.com/2024/day/2/input)  | [⭐](solutions/year_2024/day_2/part_two.py)  |           $O(n*m^2)$           |      $O(m)$      |       |
-|  3  | One  | [Description](https://adventofcode.com/2024/day/3)  | [Input](https://adventofcode.com/2024/day/3/input)  | [⭐](solutions/year_2024/day_3/part_one.py)  |            $O(n*m)$            |      $O(k)$      |       |
-|  3  | Two  | [Description](https://adventofcode.com/2024/day/3)  | [Input](https://adventofcode.com/2024/day/3/input)  | [⭐](solutions/year_2024/day_3/part_two.py)  |            $O(n*m)$            |      $O(1)$      |       |
-|  4  | One  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [⭐](solutions/year_2024/day_4/part_one.py)  |       $O((n+m)*(n+m)*k)$       |     $O(n*m)$     |       |
-|  4  | Two  | [Description](https://adventofcode.com/2024/day/4)  | [Input](https://adventofcode.com/2024/day/4/input)  | [⭐](solutions/year_2024/day_4/part_two.py)  |         $O(n * m * k)$         |      $O(k)$      |       |
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  |        Time Complexity         | Space Complexity | Notes                          |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:------------------------------:|:----------------:|--------------------------------|
+|  1  | One  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_one.py) | $O(n*\log_2{n} + m*\log_2{m})$ |     $O(n+m)$     |                                |
+|  1  | Two  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_two.py) |            $O(n+m)$            |      $O(1)$      |                                |
+|  2  | One  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_one.py) |            $O(n*m)$            |      $O(1)$      |                                |
+|  2  | Two  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_two.py) |           $O(n*m^2)$           |      $O(m)$      |                                |
+|  3  | One  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_one.py) |            $O(n*m)$            |      $O(k)$      |                                |
+|  3  | Two  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_two.py) |            $O(n*m)$            |      $O(1)$      |                                |
+|  4  | One  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_one.py) |       $O((n+m)*(n+m)*k)$       |     $O(n*m)$     |                                |
+|  4  | Two  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_two.py) |         $O(n * m * k)$         |      $O(k)$      |                                |
+|  5  | One  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_one.py) |              $-$               |       $-$        | Graph Theory, Topological sort |
+|  5  | Two  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_two.py) |              $-$               |       $-$        | Graph Theory, Topological sort |
+|  6  | One  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_one.py) |            $O(n*m)$            |     $O(n*m)$     |                                |
+|  6  | Two  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_two.py) |          $O(n^2*m^2)$          |     $O(n*m)$     | Could be better?               |
 
 ### Year 2023
 
@@ -82,32 +87,52 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
 |:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_two.py) |     $O(n)$      |      $O(1)$      |       |
 
 ### Year 2020
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
 |:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2020/day/1) | [Input](https://adventofcode.com/2020/day/1/input) | [⭐](solutions/year_2020/day_1/part_one.py) |     $O(n)$      |      $O(n)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2020/day/1) | [Input](https://adventofcode.com/2020/day/1/input) | [⭐](solutions/year_2020/day_1/part_two.py) |    $O(n^2)$     |      $O(1)$      |       |
 
 ### Year 2019
 
-| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
-|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  |  Time Complexity  | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:-----------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2019/day/1) | [Input](https://adventofcode.com/2019/day/1/input) | [⭐](solutions/year_2019/day_1/part_one.py) |      $O(n)$       |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2019/day/1) | [Input](https://adventofcode.com/2019/day/1/input) | [⭐](solutions/year_2019/day_1/part_two.py) | $O(n*log_{3}(m))$ |      $O(1)$      |       |
 
 ### Year 2018
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
 |:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2018/day/1) | [Input](https://adventofcode.com/2018/day/1/input) | [⭐](solutions/year_2018/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2018/day/1) | [Input](https://adventofcode.com/2018/day/1/input) | [⭐](solutions/year_2018/day_1/part_two.py) |     $O(n)$      |      $O(n)$      |       |
 
 ### Year 2017
 
-| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
-|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  |    Time Complexity     | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:----------------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2017/day/1) | [Input](https://adventofcode.com/2017/day/1/input) | [⭐](solutions/year_2017/day_1/part_one.py) |         $O(n)$         |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2017/day/1) | [Input](https://adventofcode.com/2017/day/1/input) | [⭐](solutions/year_2017/day_1/part_two.py) |         $O(n)$         |      $O(n)$      |       |
+|  2  | One  | [Description](https://adventofcode.com/2017/day/2) | [Input](https://adventofcode.com/2017/day/2/input) | [⭐](solutions/year_2017/day_2/part_one.py) |        $O(n*m)$        |      $O(1)$      |       |
+|  2  | Two  | [Description](https://adventofcode.com/2017/day/2) | [Input](https://adventofcode.com/2017/day/2/input) | [⭐](solutions/year_2017/day_2/part_two.py) |       $O(n*m^2)$       |      $O(1)$      |       |
 
 ### Year 2016
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
 |:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2016/day/1) | [Input](https://adventofcode.com/2016/day/1/input) | [⭐](solutions/year_2016/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2016/day/1) | [Input](https://adventofcode.com/2016/day/1/input) | [⭐](solutions/year_2016/day_1/part_two.py) |    $O(n*m)$     |     $O(n*m)$     |       |
 
+### Year 2015
+
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
+|  1  | One  | [Description](https://adventofcode.com/2015/day/1) | [Input](https://adventofcode.com/2015/day/1/input) | [⭐](solutions/year_2015/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |       |
+|  1  | Two  | [Description](https://adventofcode.com/2015/day/1) | [Input](https://adventofcode.com/2015/day/1/input) | [⭐](solutions/year_2015/day_1/part_two.py) |     $O(n)$      |      $O(1)$      |       |
 
 
 ## Usage
@@ -132,7 +157,8 @@ Dependencies:
 pip install -r infrastructure/requirements.txt
 ```
 
-Environment:
+Regardless of whether the application will be run locally or in a container, it's necessary to create and populate `.env` file before launching.
+It's possible to use `.env.example` file to do this:
 
 ```dotenv
 SESSION=<your-session-cookie>
@@ -144,6 +170,36 @@ YEAR=2024
 DAY=1
 PART=one
 ```
+
+The `.env` file consists of several mandatory environment variables:
+
++ SESSION - ...;
+
+
++ **UID** - in Linux a UID (User Identifier) is a unique number assigned to each user on a system.
+  It identifies the user for system processes, permissions, and ownership of files or directories.
+  The **root** user by default has an UID equal to **0**, in case the application is run under a different user account
+  it's possible to check current UID using the following command:
+  ```shell
+  id --user ${whoami}
+  ```
+  More about [UID](https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-permission-uid-vs-gid).
+
+
++ **GID** - In Linux, a GID (Group Identifier) is a unique number assigned to each group on the system. 
+  It is used to define the ownership of files, directories, and processes at the group level.
+  The **root** user by default has an GID equal to **0**, in case the application is run under a different user account
+  it's possible to check current GID using the following command:
+  ```shell
+  id --group ${whoami}
+  ```
+  More about [GID](https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-permission-uid-vs-gid).
+
+
++ **YEAR** - ...
++ **DAY** - ...
++ **PART** - ...
+
 
 ### Local Run
 

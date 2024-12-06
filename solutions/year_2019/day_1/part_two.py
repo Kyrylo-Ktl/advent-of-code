@@ -20,10 +20,11 @@ class Year2019Day1Part2Solution(Solution):
     @override
     def solve(cls, masses: list[int]) -> int:
         """
-        Time:  O(n*sqrt3(m))
+        Time:  O(n*log3(m))
         Space: O(1)
 
-        Where n - length of list with masses
+        Where n - length of list with masses,
+              m - maximum mass value
         """
         fuel = 0
 

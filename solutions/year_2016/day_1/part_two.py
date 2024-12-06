@@ -24,6 +24,13 @@ class Year2016Day1Part2Solution(Solution):
     @classmethod
     @override
     def solve(cls, moves: list[MOVE]) -> int:
+        """
+        Time:  O(n*m)
+        Space: O(n*m)
+
+        Where n - number of moves,
+              m - maximum steps per move
+        """
         x = 0
         y = 0
 

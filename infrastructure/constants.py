@@ -3,6 +3,7 @@ from enum import IntEnum, unique
 
 @unique
 class Year(IntEnum):
+    YEAR_2015 = 2015
     YEAR_2016 = 2016
     YEAR_2017 = 2017
     YEAR_2018 = 2018
