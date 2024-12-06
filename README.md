@@ -185,7 +185,7 @@ SESSION=<your-session-cookie>
 
 YEAR=2024
 DAY=1
-PART=one
+PART=1
 
 GID=0
 UID=0
