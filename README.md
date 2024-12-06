@@ -2,37 +2,41 @@
 
 
 [![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-ffff66?logo=adventofcode&logoColor=000)](<https://adventofcode.com/> "Advent of Code homepage")
-[![Made with Python](https://img.shields.io/badge/Python->=3.11-blue?logo=python&logoColor=yellow)](<https://python.org> "Python homepage")
+[![Made with Python](https://img.shields.io/badge/Python->=3.12-blue?logo=python&logoColor=yellow)](<https://python.org> "Python homepage")
+[![Made with Docker](https://img.shields.io/badge/Docker%20Compose->=2-blue?logo=docker&logoColor=blue)](<https://docs.docker.com/compose/> "Docker Compose homepage")
 ![Last commit](https://img.shields.io/github/last-commit/Kyrylo-Ktl/advent-of-code "Last commit")
 
 ---
 
-[![AoC 2015](https://img.shields.io/badge/2015-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2015)
-[![AoC 2016](https://img.shields.io/badge/2016-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2016)
-[![AoC 2017](https://img.shields.io/badge/2017-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2017)
-[![AoC 2018](https://img.shields.io/badge/2018-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
-[![AoC 2019](https://img.shields.io/badge/2019-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019)  
-[![AoC 2020](https://img.shields.io/badge/2020-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
-[![AoC 2021](https://img.shields.io/badge/2021-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
-[![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
-[![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
 [![AoC 2024](https://img.shields.io/badge/2024-⭐%208-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
+[![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
+[![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
+[![AoC 2021](https://img.shields.io/badge/2021-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
+[![AoC 2020](https://img.shields.io/badge/2020-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
+[![AoC 2019](https://img.shields.io/badge/2019-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019) 
+[![AoC 2018](https://img.shields.io/badge/2018-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
+[![AoC 2017](https://img.shields.io/badge/2017-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2017)
+[![AoC 2016](https://img.shields.io/badge/2016-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2016)
+[![AoC 2015](https://img.shields.io/badge/2015-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2015)
 
 ---
 
-This project contains all my solutions for [Advent of Code](https://adventofcode.com/) challenges.
+This project contains all [my](https://www.linkedin.com/in/kyrylo-ktl/) solutions for [Advent of Code](https://adventofcode.com/) challenges.
 
 > [!WARNING]
-> Note that ***this project can automatically download tasks and inputs and submit your solutions*** to the Advent of
-> Code server. Please use it moderately.
+> Note that **this project can automatically download inputs from** the Advent of Code server. Please use it moderately.
 
+But what is Advent of Code? From the author, Eric Wastl:
 
-...
+> Advent of Code is an Advent calendar of small programming puzzles for a variety of skill levels that can be solved in any programming language you like. People use them as interview prep, company training, university coursework, practice problems, a speed contest, or to challenge each other.
+>
+> You don't need a computer science background to participate - just a little programming knowledge and some problem solving skills will get you pretty far. Nor do you need a fancy computer; every problem has a solution that completes in at most 15 seconds on ten-year-old hardware.
+
 
 ## Table of Contents
 
 - [Solutions](#solutions)
-  - Solutions for year [2024](#year-2024) with **4**/**25** days solved;
+  - Solutions for year [2024](#year-2024) with **6**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
   - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
   - Solutions for year [2021](#year-2021) with **1**/**25** days solved;
@@ -139,7 +143,9 @@ This project contains all my solutions for [Advent of Code](https://adventofcode
 
 ### Setup
 
-Clone project:
+The application infrastructure code is cross-platform, so it works on Linux, macOS and Windows.
+To use it, make sure you have **Python** version **3.12** or newer or **Docker** and **Docker Compose** version **2** installed
+on your machine and clone the repository:
 
 ```shell
 git clone https://github.com/Kyrylo-Ktl/advent-of-code
@@ -151,29 +157,48 @@ Move to project directory:
 cd advent-of-code
 ```
 
-Dependencies:
+#### Local usage
+
+Install the required dependencies for local run:
 
 ```shell
 pip install -r infrastructure/requirements.txt
 ```
 
-Regardless of whether the application will be run locally or in a container, it's necessary to create and populate `.env` file before launching.
+Set necessary for downloading personalized inputs Advent of Code session cookie as environment variable:
+
+```shell
+export SESSION=<your-session-cookie>
+```
+
+> [!NOTE]
+> The `SESSION` is Advent of Code session cookie. It's possible to get it by search in browser console after pressing `F12`
+and going into the `Network` tab in browser. To do this it's necessary to be logged in to the site.
+
+#### Docker usage
+
+To run application in container, it's necessary to create and populate `.env` file before launching.
 It's possible to use `.env.example` file to do this:
 
 ```dotenv
 SESSION=<your-session-cookie>
 
-GID=0
-UID=0
-
 YEAR=2024
 DAY=1
 PART=one
+
+GID=0
+UID=0
 ```
 
 The `.env` file consists of several mandatory environment variables:
 
-+ SESSION - ...;
++ **SESSION** - Advent of Code session cookie;
+
+
++ **YEAR** - task year for running commands;
++ **DAY** - task day for running commands;
++ **PART** - task part for running commands;
 
 
 + **UID** - in Linux a UID (User Identifier) is a unique number assigned to each user on a system.
@@ -196,26 +221,21 @@ The `.env` file consists of several mandatory environment variables:
   More about [GID](https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-permission-uid-vs-gid).
 
 
-+ **YEAR** - ...
-+ **DAY** - ...
-+ **PART** - ...
-
-
 ### Local Run
 
-Downloader:
+To download personalized task input use:
 
 ```shell
 python -m infrastructure.commands.downloader --year=2024 --day=1
 ```
 
-Runner:
+To run task solution use:
 
 ```shell
 python -m infrastructure.commands.runner --year=2024 --day=1 --part=1
 ```
 
-Validator:
+To validate all tasks solutions:
 
 ```shell
 python -m infrastructure.commands.validator --execute
@@ -223,19 +243,19 @@ python -m infrastructure.commands.validator --execute
 
 ### Run in Docker
 
-Downloader:
+To download personalized task input use:
 
 ```shell
 docker compose up advent-of-code-downloader --build
 ```
 
-Runner:
+To run task solution use:
 
 ```shell
 docker compose up advent-of-code-runner --build
 ```
 
-Validator:
+To validate all tasks solutions:
 
 ```shell
 docker compose up advent-of-code-validator --build
