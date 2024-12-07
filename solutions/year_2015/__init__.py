@@ -6,6 +6,8 @@ from .day_6.part_one import Year2015Day6Part1Solution
 from .day_6.part_two import Year2015Day6Part2Solution
 from .day_8.part_one import Year2015Day8Part1Solution
 from .day_8.part_two import Year2015Day8Part2Solution
+from .day_9.part_one import Year2015Day9Part1Solution
+from .day_9.part_two import Year2015Day9Part2Solution
 
 __all__ = (
     'Year2015Day1Part1Solution',
@@ -19,4 +21,7 @@ __all__ = (
 
     'Year2015Day8Part1Solution',
     'Year2015Day8Part2Solution',
+
+    'Year2015Day9Part1Solution',
+    'Year2015Day9Part2Solution',
 )
