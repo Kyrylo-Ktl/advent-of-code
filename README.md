@@ -56,20 +56,22 @@ But what is Advent of Code? From the author, Eric Wastl:
 
 ### Year 2024
 
-| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  |        Time Complexity         | Space Complexity |       Notes       |
-|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:------------------------------:|:----------------:|:-----------------:|
-|  1  | One  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_one.py) | $O(n*\log_2{n} + m*\log_2{m})$ |     $O(n+m)$     |                   |
-|  1  | Two  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_two.py) |            $O(n+m)$            |      $O(1)$      |                   |
-|  2  | One  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_one.py) |            $O(n*m)$            |      $O(1)$      |                   |
-|  2  | Two  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_two.py) |           $O(n*m^2)$           |      $O(m)$      |                   |
-|  3  | One  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_one.py) |            $O(n*m)$            |      $O(k)$      |                   |
-|  3  | Two  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_two.py) |            $O(n*m)$            |      $O(1)$      |                   |
-|  4  | One  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_one.py) |       $O((n+m)*(n+m)*k)$       |     $O(n*m)$     |                   |
-|  4  | Two  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_two.py) |         $O(n * m * k)$         |      $O(k)$      |                   |
-|  5  | One  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_one.py) |              $-$               |       $-$        | Topological sort  |
-|  5  | Two  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_two.py) |              $-$               |       $-$        | Topological sort  |
-|  6  | One  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_one.py) |            $O(n*m)$            |     $O(n*m)$     |                   |
-|  6  | Two  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_two.py) |          $O(n^2*m^2)$          |     $O(n*m)$     |        ...        |
+| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  |        Time Complexity         | Space Complexity |      Notes       |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:------------------------------:|:----------------:|:----------------:|
+|  1  | One  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_one.py) | $O(n*\log_2{n} + m*\log_2{m})$ |     $O(n+m)$     |       ...        |
+|  1  | Two  | [Description](https://adventofcode.com/2024/day/1) | [Input](https://adventofcode.com/2024/day/1/input) | [⭐](solutions/year_2024/day_1/part_two.py) |            $O(n+m)$            |      $O(1)$      |       ...        |
+|  2  | One  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_one.py) |            $O(n*m)$            |      $O(1)$      |       ...        |
+|  2  | Two  | [Description](https://adventofcode.com/2024/day/2) | [Input](https://adventofcode.com/2024/day/2/input) | [⭐](solutions/year_2024/day_2/part_two.py) |           $O(n*m^2)$           |      $O(m)$      |       ...        |
+|  3  | One  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_one.py) |            $O(n*m)$            |      $O(k)$      |       ...        |
+|  3  | Two  | [Description](https://adventofcode.com/2024/day/3) | [Input](https://adventofcode.com/2024/day/3/input) | [⭐](solutions/year_2024/day_3/part_two.py) |            $O(n*m)$            |      $O(1)$      |       ...        |
+|  4  | One  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_one.py) |       $O((n+m)*(n+m)*k)$       |     $O(n*m)$     |       ...        |
+|  4  | Two  | [Description](https://adventofcode.com/2024/day/4) | [Input](https://adventofcode.com/2024/day/4/input) | [⭐](solutions/year_2024/day_4/part_two.py) |         $O(n * m * k)$         |      $O(k)$      |       ...        |
+|  5  | One  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_one.py) |              $-$               |       $-$        | Topological sort |
+|  5  | Two  | [Description](https://adventofcode.com/2024/day/5) | [Input](https://adventofcode.com/2024/day/5/input) | [⭐](solutions/year_2024/day_5/part_two.py) |              $-$               |       $-$        | Topological sort |
+|  6  | One  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_one.py) |            $O(n*m)$            |     $O(n*m)$     |       ...        |
+|  6  | Two  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_two.py) |          $O(n^2*m^2)$          |     $O(n*m)$     |       ...        |
+|  7  | One  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_one.py) |           $O(n*k^m)$           |      $O(1)$      |   Backtracking   |
+|  7  | Two  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_two.py) |           $O(n*k^m)$           |      $O(m)$      |   Backtracking   |
 
 ### Year 2023
 
