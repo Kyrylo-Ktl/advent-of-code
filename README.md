@@ -73,7 +73,7 @@ But what is Advent of Code? From the author, Eric Wastl:
 |  7  | One  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_one.py) |           $O(n*k^m)$           |      $O(1)$      |   Backtracking   |
 |  7  | Two  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_two.py) |           $O(n*k^m)$           |      $O(m)$      |   Backtracking   |
 |  7  | One  | [Description](https://adventofcode.com/2024/day/8) | [Input](https://adventofcode.com/2024/day/8/input) | [⭐](solutions/year_2024/day_8/part_one.py) |          $O(n^2*m^2)$          |     $O(n*m)$     |  Linear Algebra  |
-|  7  | Two  | [Description](https://adventofcode.com/2024/day/8) | [Input](https://adventofcode.com/2024/day/8/input) | [⭐](solutions/year_2024/day_8/part_two.py) |     $O(n^2*m^2*max(n,m))$      |     $O(n*m)$     |  Linear Algebra  |
+|  7  | Two  | [Description](https://adventofcode.com/2024/day/8) | [Input](https://adventofcode.com/2024/day/8/input) | [⭐](solutions/year_2024/day_8/part_two.py) |   $O(n^2 * m^2 * max(n,m))$    |     $O(n*m)$     |  Linear Algebra  |
 
 ### Year 2023
 
