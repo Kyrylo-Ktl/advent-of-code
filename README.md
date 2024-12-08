@@ -8,7 +8,7 @@
 
 ---
 
-[![AoC 2024](https://img.shields.io/badge/2024-⭐%208-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
+[![AoC 2024](https://img.shields.io/badge/2024-⭐%2016-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
 [![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
 [![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
 [![AoC 2021](https://img.shields.io/badge/2021-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
@@ -36,7 +36,7 @@ But what is Advent of Code? From the author, Eric Wastl:
 ## Table of Contents
 
 - [Solutions](#solutions)
-  - Solutions for year [2024](#year-2024) with **6**/**25** days solved;
+  - Solutions for year [2024](#year-2024) with **8**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
   - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
   - Solutions for year [2021](#year-2021) with **1**/**25** days solved;
@@ -72,6 +72,8 @@ But what is Advent of Code? From the author, Eric Wastl:
 |  6  | Two  | [Description](https://adventofcode.com/2024/day/6) | [Input](https://adventofcode.com/2024/day/6/input) | [⭐](solutions/year_2024/day_6/part_two.py) |          $O(n^2*m^2)$          |     $O(n*m)$     |       ...        |
 |  7  | One  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_one.py) |           $O(n*k^m)$           |      $O(1)$      |   Backtracking   |
 |  7  | Two  | [Description](https://adventofcode.com/2024/day/7) | [Input](https://adventofcode.com/2024/day/7/input) | [⭐](solutions/year_2024/day_7/part_two.py) |           $O(n*k^m)$           |      $O(m)$      |   Backtracking   |
+|  7  | One  | [Description](https://adventofcode.com/2024/day/8) | [Input](https://adventofcode.com/2024/day/8/input) | [⭐](solutions/year_2024/day_8/part_one.py) |          $O(n^2*m^2)$          |     $O(n*m)$     |  Linear Algebra  |
+|  7  | Two  | [Description](https://adventofcode.com/2024/day/8) | [Input](https://adventofcode.com/2024/day/8/input) | [⭐](solutions/year_2024/day_8/part_two.py) |     $O(n^2*m^2*max(n,m))$      |     $O(n*m)$     |  Linear Algebra  |
 
 ### Year 2023
 
