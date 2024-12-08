@@ -11,7 +11,7 @@
 [![AoC 2024](https://img.shields.io/badge/2024-⭐%2016-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
 [![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
 [![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
-[![AoC 2021](https://img.shields.io/badge/2021-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
+[![AoC 2021](https://img.shields.io/badge/2021-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
 [![AoC 2020](https://img.shields.io/badge/2020-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
 [![AoC 2019](https://img.shields.io/badge/2019-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019) 
 [![AoC 2018](https://img.shields.io/badge/2018-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
@@ -39,7 +39,7 @@ But what is Advent of Code? From the author, Eric Wastl:
   - Solutions for year [2024](#year-2024) with **8**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
   - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
-  - Solutions for year [2021](#year-2021) with **1**/**25** days solved;
+  - Solutions for year [2021](#year-2021) with **2**/**25** days solved;
   - Solutions for year [2020](#year-2020) with **1**/**25** days solved;
   - Solutions for year [2019](#year-2019) with **1**/**25** days solved;
   - Solutions for year [2018](#year-2018) with **1**/**25** days solved;
@@ -94,9 +94,11 @@ But what is Advent of Code? From the author, Eric Wastl:
 ### Year 2021
 
 | Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
-|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|-------|
-|  1  | One  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |       |
-|  1  | Two  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_two.py) |     $O(n)$      |      $O(1)$      |       |
+|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|:-----:|
+|  1  | One  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |  ...  |
+|  1  | Two  | [Description](https://adventofcode.com/2021/day/1) | [Input](https://adventofcode.com/2021/day/1/input) | [⭐](solutions/year_2021/day_1/part_two.py) |     $O(n)$      |      $O(1)$      |  ...  |
+|  2  | One  | [Description](https://adventofcode.com/2021/day/2) | [Input](https://adventofcode.com/2021/day/2/input) | [⭐](solutions/year_2021/day_2/part_one.py) |     $O(n)$      |      $O(1)$      |  ...  |
+|  2  | Two  | [Description](https://adventofcode.com/2021/day/2) | [Input](https://adventofcode.com/2021/day/2/input) | [⭐](solutions/year_2021/day_2/part_two.py) |     $O(n)$      |      $O(1)$      |  ...  |
 
 ### Year 2020
 
