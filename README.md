@@ -143,14 +143,16 @@ But what is Advent of Code? From the author, Eric Wastl:
 
 ### Year 2015
 
-| Day | Part |                  Task description                  |                     Task input                     |                  Solution                  | Time Complexity | Space Complexity | Notes |
-|:---:|:----:|:--------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------:|:---------------:|:----------------:|:-----:|
-|  1  | One  | [Description](https://adventofcode.com/2015/day/1) | [Input](https://adventofcode.com/2015/day/1/input) | [⭐](solutions/year_2015/day_1/part_one.py) |     $O(n)$      |      $O(1)$      |  ...  |
-|  1  | Two  | [Description](https://adventofcode.com/2015/day/1) | [Input](https://adventofcode.com/2015/day/1/input) | [⭐](solutions/year_2015/day_1/part_two.py) |     $O(n)$      |      $O(1)$      |  ...  |
-|  8  | One  | [Description](https://adventofcode.com/2015/day/8) | [Input](https://adventofcode.com/2015/day/8/input) | [⭐](solutions/year_2015/day_8/part_one.py) |    $O(n*m)$     |      $O(1)$      |  ...  |
-|  8  | Two  | [Description](https://adventofcode.com/2015/day/8) | [Input](https://adventofcode.com/2015/day/8/input) | [⭐](solutions/year_2015/day_8/part_two.py) |    $O(n*m)$     |      $O(1)$      |  ...  |
-|  9  | One  | [Description](https://adventofcode.com/2015/day/9) | [Input](https://adventofcode.com/2015/day/9/input) | [⭐](solutions/year_2015/day_9/part_one.py) |    $O(n^3)$     |      $O(n)$      |  DFS  |
-|  9  | Two  | [Description](https://adventofcode.com/2015/day/9) | [Input](https://adventofcode.com/2015/day/9/input) | [⭐](solutions/year_2015/day_9/part_two.py) |    $O(n^3)$     |      $O(n)$      |  DFS  |
+| Day | Part |                  Task description                   |                     Task input                      |                  Solution                   | Time Complexity | Space Complexity | Notes |
+|:---:|:----:|:---------------------------------------------------:|:---------------------------------------------------:|:-------------------------------------------:|:---------------:|:----------------:|:-----:|
+|  1  | One  | [Description](https://adventofcode.com/2015/day/1)  | [Input](https://adventofcode.com/2015/day/1/input)  | [⭐](solutions/year_2015/day_1/part_one.py)  |     $O(n)$      |      $O(1)$      |  ...  |
+|  1  | Two  | [Description](https://adventofcode.com/2015/day/1)  | [Input](https://adventofcode.com/2015/day/1/input)  | [⭐](solutions/year_2015/day_1/part_two.py)  |     $O(n)$      |      $O(1)$      |  ...  |
+|  8  | One  | [Description](https://adventofcode.com/2015/day/8)  | [Input](https://adventofcode.com/2015/day/8/input)  | [⭐](solutions/year_2015/day_8/part_one.py)  |    $O(n*m)$     |      $O(1)$      |  ...  |
+|  8  | Two  | [Description](https://adventofcode.com/2015/day/8)  | [Input](https://adventofcode.com/2015/day/8/input)  | [⭐](solutions/year_2015/day_8/part_two.py)  |    $O(n*m)$     |      $O(1)$      |  ...  |
+|  9  | One  | [Description](https://adventofcode.com/2015/day/9)  | [Input](https://adventofcode.com/2015/day/9/input)  | [⭐](solutions/year_2015/day_9/part_one.py)  |    $O(n^3)$     |      $O(n)$      |  DFS  |
+|  9  | Two  | [Description](https://adventofcode.com/2015/day/9)  | [Input](https://adventofcode.com/2015/day/9/input)  | [⭐](solutions/year_2015/day_9/part_two.py)  |    $O(n^3)$     |      $O(n)$      |  DFS  |
+| 10  | One  | [Description](https://adventofcode.com/2015/day/10) | [Input](https://adventofcode.com/2015/day/10/input) | [⭐](solutions/year_2015/day_10/part_one.py) |    $O(2^n)$     |     $O(2^n)$     |  ...  |
+| 10  | Two  | [Description](https://adventofcode.com/2015/day/10) | [Input](https://adventofcode.com/2015/day/10/input) | [⭐](solutions/year_2015/day_10/part_two.py) |    $O(2^n)$     |     $O(2^n)$     |  ...  |
 
 
 ## Usage
