@@ -10,14 +10,14 @@
 
 [![AoC 2024](https://img.shields.io/badge/2024-⭐%2020-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
 [![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
-[![AoC 2022](https://img.shields.io/badge/2022-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
+[![AoC 2022](https://img.shields.io/badge/2022-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
 [![AoC 2021](https://img.shields.io/badge/2021-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
-[![AoC 2020](https://img.shields.io/badge/2020-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
-[![AoC 2019](https://img.shields.io/badge/2019-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019) 
-[![AoC 2018](https://img.shields.io/badge/2018-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
-[![AoC 2017](https://img.shields.io/badge/2017-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2017)
-[![AoC 2016](https://img.shields.io/badge/2016-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2016)
-[![AoC 2015](https://img.shields.io/badge/2015-⭐%200-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2015)
+[![AoC 2020](https://img.shields.io/badge/2020-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2020)
+[![AoC 2019](https://img.shields.io/badge/2019-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2019) 
+[![AoC 2018](https://img.shields.io/badge/2018-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2018)
+[![AoC 2017](https://img.shields.io/badge/2017-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2017)
+[![AoC 2016](https://img.shields.io/badge/2016-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2016)
+[![AoC 2015](https://img.shields.io/badge/2015-⭐%2010-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2015)
 
 ---
 
@@ -45,7 +45,7 @@ But what is Advent of Code? From the author, Eric Wastl:
   - Solutions for year [2018](#year-2018) with **1**/**25** days solved;
   - Solutions for year [2017](#year-2017) with **1**/**25** days solved;
   - Solutions for year [2016](#year-2016) with **1**/**25** days solved;
-  - Solutions for year [2015](#year-2015) with **1**/**25** days solved;
+  - Solutions for year [2015](#year-2015) with **5**/**25** days solved;
 - [Usage](#usage)
   - Project [setup](#setup) for personal usage;
   - Local [run](#local-run) of project tools;
@@ -153,6 +153,8 @@ But what is Advent of Code? From the author, Eric Wastl:
 |  9  | Two  | [Description](https://adventofcode.com/2015/day/9)  | [Input](https://adventofcode.com/2015/day/9/input)  | [⭐](solutions/year_2015/day_9/part_two.py)  |    $O(n^3)$     |      $O(n)$      |  DFS  |
 | 10  | One  | [Description](https://adventofcode.com/2015/day/10) | [Input](https://adventofcode.com/2015/day/10/input) | [⭐](solutions/year_2015/day_10/part_one.py) |    $O(2^n)$     |     $O(2^n)$     |  ...  |
 | 10  | Two  | [Description](https://adventofcode.com/2015/day/10) | [Input](https://adventofcode.com/2015/day/10/input) | [⭐](solutions/year_2015/day_10/part_two.py) |    $O(2^n)$     |     $O(2^n)$     |  ...  |
+| 12  | One  | [Description](https://adventofcode.com/2015/day/12) | [Input](https://adventofcode.com/2015/day/12/input) | [⭐](solutions/year_2015/day_12/part_one.py) |    $O(n*m)$     |     $O(n*m)$     |  ...  |
+| 12  | Two  | [Description](https://adventofcode.com/2015/day/12) | [Input](https://adventofcode.com/2015/day/12/input) | [⭐](solutions/year_2015/day_12/part_two.py) |    $O(n*m)$     |     $O(n*m)$     |  ...  |
 
 
 ## Usage
