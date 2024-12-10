@@ -76,7 +76,7 @@ But what is Advent of Code? From the author, Eric Wastl:
 |  8  | Two  | [Description](https://adventofcode.com/2024/day/8)  | [Input](https://adventofcode.com/2024/day/8/input)  | [⭐](solutions/year_2024/day_8/part_two.py)  |   $O(n^2 * m^2 * max(n,m))$    |     $O(n*m)$     |  Linear Algebra  |
 |  9  | One  | [Description](https://adventofcode.com/2024/day/9)  | [Input](https://adventofcode.com/2024/day/9/input)  | [⭐](solutions/year_2024/day_9/part_one.py)  |            $O(n*m)$            |     $O(n*m)$     |       ...        |
 |  9  | Two  | [Description](https://adventofcode.com/2024/day/9)  | [Input](https://adventofcode.com/2024/day/9/input)  | [⭐](solutions/year_2024/day_9/part_two.py)  |          $O(n^2*m^2)$          |     $O(n*m)$     |       ...        |
-| 10  | One  | [Description](https://adventofcode.com/2024/day/10) | [Input](https://adventofcode.com/2024/day/10/input) | [⭐](solutions/year_2024/day_10/part_one.py) |         $O(n*m*k^{2})$         |      $O(k)$      |       DFS        |
+| 10  | One  | [Description](https://adventofcode.com/2024/day/10) | [Input](https://adventofcode.com/2024/day/10/input) | [⭐](solutions/year_2024/day_10/part_one.py) |       $O(n * m * k^{2})$       |      $O(k)$      |       DFS        |
 | 10  | Two  | [Description](https://adventofcode.com/2024/day/10) | [Input](https://adventofcode.com/2024/day/10/input) | [⭐](solutions/year_2024/day_10/part_two.py) |            $O(n*m)$            |     $O(n*m)$     |       DFS        |
 
 ### Year 2023
