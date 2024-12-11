@@ -8,7 +8,7 @@
 
 ---
 
-[![AoC 2024](https://img.shields.io/badge/2024-⭐%2020-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
+[![AoC 2024](https://img.shields.io/badge/2024-⭐%2022-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
 [![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
 [![AoC 2022](https://img.shields.io/badge/2022-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
 [![AoC 2021](https://img.shields.io/badge/2021-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
@@ -36,7 +36,7 @@ But what is Advent of Code? From the author, Eric Wastl:
 ## Table of Contents
 
 - [Solutions](#solutions)
-  - Solutions for year [2024](#year-2024) with **10**/**25** days solved;
+  - Solutions for year [2024](#year-2024) with **11**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
   - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
   - Solutions for year [2021](#year-2021) with **2**/**25** days solved;
@@ -78,6 +78,8 @@ But what is Advent of Code? From the author, Eric Wastl:
 |  9  | Two  | [Description](https://adventofcode.com/2024/day/9)  | [Input](https://adventofcode.com/2024/day/9/input)  | [⭐](solutions/year_2024/day_9/part_two.py)  |          $O(n^2*m^2)$          |     $O(n*m)$     |       ...        |
 | 10  | One  | [Description](https://adventofcode.com/2024/day/10) | [Input](https://adventofcode.com/2024/day/10/input) | [⭐](solutions/year_2024/day_10/part_one.py) |       $O(n * m * k^{2})$       |      $O(k)$      |       DFS        |
 | 10  | Two  | [Description](https://adventofcode.com/2024/day/10) | [Input](https://adventofcode.com/2024/day/10/input) | [⭐](solutions/year_2024/day_10/part_two.py) |            $O(n*m)$            |     $O(n*m)$     |       DFS        |
+| 11  | One  | [Description](https://adventofcode.com/2024/day/11) | [Input](https://adventofcode.com/2024/day/11/input) | [⭐](solutions/year_2024/day_11/part_one.py) |         $O(n * 2^{m})$         |  $O(n * 2^{m})$  |  DP,Memoization  |
+| 11  | Two  | [Description](https://adventofcode.com/2024/day/11) | [Input](https://adventofcode.com/2024/day/11/input) | [⭐](solutions/year_2024/day_11/part_two.py) |         $O(n * 2^{m})$         |  $O(n * 2^{m})$  |  DP,Memoization  |
 
 ### Year 2023
 
