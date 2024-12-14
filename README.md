@@ -8,7 +8,7 @@
 
 ---
 
-[![AoC 2024](https://img.shields.io/badge/2024-⭐%2026-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
+[![AoC 2024](https://img.shields.io/badge/2024-⭐%2028-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2024)
 [![AoC 2023](https://img.shields.io/badge/2023-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2023)
 [![AoC 2022](https://img.shields.io/badge/2022-⭐%202-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2022)
 [![AoC 2021](https://img.shields.io/badge/2021-⭐%204-gray?logo=adventofcode&labelColor=darkgreen)](https://adventofcode.com/2021)
@@ -36,7 +36,7 @@ But what is Advent of Code? From the author, Eric Wastl:
 ## Table of Contents
 
 - [Solutions](#solutions)
-  - Solutions for year [2024](#year-2024) with **13**/**25** days solved;
+  - Solutions for year [2024](#year-2024) with **14**/**25** days solved;
   - Solutions for year [2023](#year-2023) with **2**/**25** days solved;
   - Solutions for year [2022](#year-2022) with **1**/**25** days solved;
   - Solutions for year [2021](#year-2021) with **2**/**25** days solved;
@@ -84,6 +84,8 @@ But what is Advent of Code? From the author, Eric Wastl:
 | 12  | Two  | [Description](https://adventofcode.com/2024/day/12) | [Input](https://adventofcode.com/2024/day/12/input) | [⭐](solutions/year_2024/day_12/part_two.py) |     $O(n * m * min(n,m))$      |    $O(n * m)$    |       BFS        |
 | 13  | One  | [Description](https://adventofcode.com/2024/day/13) | [Input](https://adventofcode.com/2024/day/13/input) | [⭐](solutions/year_2024/day_13/part_one.py) |             $O(n)$             |      $O(1)$      |     Algebra      |
 | 13  | Two  | [Description](https://adventofcode.com/2024/day/13) | [Input](https://adventofcode.com/2024/day/13/input) | [⭐](solutions/year_2024/day_13/part_two.py) |             $O(n)$             |      $O(1)$      |     Algebra      |
+| 14  | One  | [Description](https://adventofcode.com/2024/day/14) | [Input](https://adventofcode.com/2024/day/14/input) | [⭐](solutions/year_2024/day_14/part_one.py) |             $O(n)$             |      $O(1)$      |       ...        |
+| 14  | Two  | [Description](https://adventofcode.com/2024/day/14) | [Input](https://adventofcode.com/2024/day/14/input) | [⭐](solutions/year_2024/day_14/part_two.py) |             $O(∞)$             |      $O(n)$      |       ...        |
 
 ### Year 2023
 
